@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos</title>
+</head>
+
+<body>
+    <h1 id="inicio">Explicando conceitos da programação Front-End</h1>
+    <hr>
+    <h2>Sumario do site:</h2>
+    <ul>
+        <li><a href="#client-server">Entendendo o sistema Client-Server</a></li>
+        <ul>
+            <li><a href="#client">O que são clients?</a></li>
+            <li><a href="#server">O que são servers?</a></li>
+            <li><a href="#nomes">Grandes nomes</a></li>
+        </ul>
+        <li><a href="#intro">Introdução ao HTML na prática</a></li>
+        <ul>
+            <li><a href="#estrutura">Estrutura basica do HTML</a></li>
+            <li><a href="#tag">Falando sobre Tags</a></li>
+            <li><a href="#atributo">Atributos das Tags</a></li>
+            <li><a href="#lista">Listas ordenadas e não ordenadas</a></li>
+            <li><a href="#link">Links</a></li>
+        </ul>
+    </ul>
+    <hr>
+
+    <h2 id="client-server">Entendendo o sistema Client-Server</h2>
+    <h3 id="client">O que são clients?</h3>
+    <p>O client são todos os dispositivos que utilizamos no dia-dia, que fazem requisições para o servers.</p>
+
+    <h3 id="server">O que são servers?</h3>
+    <p>O servidor é o computador (ou conjunto de computadores) robusto e especializado que armazena os recursos e
+        aguarda os pedidos dos clientes para então fornecê-los (ou "servi-los").</p>
+
+    <h3 id="nomes">Grandes nomes:</h3>
+    <p><strong>Alan Turing</strong></p>
+    <p>Considerado o "pai da ciência da computação".
+        Formalizou os conceitos de "algoritmo" e "computação" com a Máquina de Turing,
+        um modelo teórico de um computador universal.
+        Seu trabalho durante a Segunda Guerra Mundial para decifrar
+        o código Enigma foi crucial e demonstrou o poder da computação
+        na prática, além de ter lançado as bases para a inteligência artificial.
+    </p>
+    <p><strong>Ada Lovelace</strong></p>
+    <p>Reconhecida como a "primeira programadora" da história.No século XIX, muito antes de qualquer computador ser
+        construído, ela escreveu o que é considerado o primeiro algoritmo destinado a ser processado por uma máquina — a
+        "Máquina Analítica" de Charles Babbage. Ela entendeu que a máquina poderia ir além de meros cálculos e manipular
+        símbolos.</p>
+    <p><strong>Vint Cerf</strong></p>
+    <p>Frequentemente chamado de um dos "pais da internet".Juntamente com Bob Kahn, ele co-desenvolveu o TCP/IP
+        (Protocolo de Controle de Transmissão/Protocolo de Internet). Este é o conjunto de protocolos de comunicação
+        fundamental que rege como os dados são divididos em pacotes e enviados através de redes. Essencialmente, é o
+        "idioma" que permite que computadores diferentes se comuniquem para formar a internet.</p>
+    <p><strong>Bob Kahn</strong></p>
+    <p>O parceiro de Vint Cerf na criação do TCP/IP.Enquanto trabalhava na ARPA (Agência de Projetos de Pesquisa
+        Avançada dos EUA), Kahn foi o arquiteto da rede ARPANET. Ele teve a ideia inicial do TCP/IP para permitir que
+        redes diferentes e independentes pudessem se conectar sem perder dados, e recrutou Vint Cerf para ajudá-lo a
+        resolver os detalhes.</p>
+    <p><strong>Tim Berners-Lee</strong></p>
+    <p>O inventor da World Wide Web (WWW).É importante não confundir a "internet" (a rede de computadores) com a "web"
+        (a forma como acessamos informações nela). Em 1989, enquanto trabalhava no CERN, Berners-Lee inventou as três
+        tecnologias fundamentais da web:
+        HTML: A linguagem de marcação para criar páginas.
+        URL: O sistema de endereços para encontrar as páginas.
+        HTTP: O protocolo para "pedir" e "entregar" as páginas. Ele também criou o primeiro navegador e o primeiro
+        servidor web. Crucialmente, ele disponibilizou sua invenção gratuitamente, sem patentes, permitindo que ela se
+        tornasse o fenômeno global que é hoje.
+    </p>
+    <p>Esses são alguns dos nomes dos grandes responsaveis pela internet e computação como conhecemos hoje.</p>
+    <a href="#inicio">Voltar inicio</a>
+    <hr>
+
+    <h2 id="intro">Introdução ao HTML na prática</h2>
+    <h3 id="estrutura">Estrutura basica do HTML:</h3>
+    <p>A estrutura do HTML é baseada em Tags, atraves delas, ele entende o que é um paragrafo ou um título.</p>
+
+    <h3 id="tag">Falando sobre Tags:</h3>
+    <p>Aqui vou listar algumas das Tags usadas nesse código e explicar brevemente qual sua utilidade.</p>
+    <p><strong>p = paragrafo</strong>, com essa ele tag ele gera um paragrafo.</p>
+    <p><strong>h = titulo</strong>, tem diferentes tipos de h(1,2,3,4,5,6) que definem sua importancia.</p>
+    <p><strong>ul = Unordered</strong>, lista não ordenada.</p>
+    <p><strong>ol = lista ordenada</strong>, essa em expecifico não utilizei durante o processo de desenvolvimento.</p>
+    <p><strong>li = lista</strong>, cria um tópico dentro das listas ordenadas e não ordenadas.</p>
+
+    <h3 id="atributo">Atributos das Tags</h3>
+    <p><strong>ID</strong> - Define um identificador único para um elemento na página. É muito usado por CSS (para
+        estilizar aquele elemento específico) e JavaScript (para "encontrar" e manipular o elemento).</p>
+    <p><strong>CLASS</strong> - Define uma ou mais classes para um elemento. É a forma mais comum de agrupar elementos para
+        aplicar estilos CSS. Vários elementos podem ter a mesma classe.</p>
+    <p><strong>STYLE</strong> - Permite aplicar regras de CSS "inline" (diretamente no elemento). Geralmente é preferível usar class ou id e um arquivo CSS separado, mas o style é útil para testes rápidos.</p>
+    <p><strong>TITLE</strong> - Fornece informações extras sobre o elemento. Na maioria dos navegadores, isso aparece como uma "dica" (tooltip) quando o usuário passa o mouse sobre o elemento.</p>
+    <p><strong>LANG</strong> - Especifica o idioma do conteúdo do elemento. É importante para acessibilidade (leitores de tela) e SEO (mecanismos de busca).</p>
+
+    <h3 id="lista">Listas ordenadas e não ordenadas:</h3>
+    <p>Para criar uma lista ordenada/não ordenada é necessario duas Tags</p>
+    <img src="Exemplos/list-ordenada.png" alt="lista ordenada">
+    <img src="Exemplos/nao-ordenado.png" alt="lista nao ordenada">
+
+    <h3 id="link">Links:</h3>
+    <p>Para adicionar links ao seu site tanto para conteudos externos ou internos você vai utilizar a Tag..</p>
+    <p><strong>a = para ancorar</strong></p>
+    <p><strong>href = hypertext reference</strong></p>
+    <img src="Exemplos/link-img.png" alt="como add um link">
+    <p></p>
+    <a href="#inicio">Voltar inicio</a>
+</body>
+
+</html>
